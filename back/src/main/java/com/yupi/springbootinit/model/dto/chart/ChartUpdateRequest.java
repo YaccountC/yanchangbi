@@ -33,6 +33,10 @@ public class ChartUpdateRequest implements Serializable {
      * 标签列表
      */
     private List<String> tags;
+    /**
+     * 图标名称
+     */
+    private String name;
 
     private static final long serialVersionUID = 1L;
 }
