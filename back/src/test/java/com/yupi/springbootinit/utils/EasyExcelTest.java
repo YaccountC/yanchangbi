@@ -11,6 +11,8 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 
+
+
 /**
  * EasyExcel 测试
  *
@@ -29,6 +31,26 @@ public class EasyExcelTest {
                 .headRowNumber(0)
                 .doReadSync();
         System.out.println(list);
+    }
+    @Test
+    public void josson(){
+        String str ="{\n" +
+                "    xAxis: {\n" +
+                "        type: 'category',\n" +
+                "        data: ['1月', '2月', '3月', '4月']\n" +
+                "    },\n" +
+                "    yAxis: {\n" +
+                "        type: 'value'\n" +
+                "    },\n" +
+                "    series: [{\n" +
+                "        data: [10, 20, 30, 40],\n" +
+                "        type: 'line'\n" +
+                "    }]\n" +
+                "}\n" ;
+
+
+
+        System.out.println(str.replace("\n"," ").replace("'","\""));
     }
 
 }

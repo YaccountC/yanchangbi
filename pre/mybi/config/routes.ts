@@ -16,12 +16,17 @@ export default [
     layout: false,
     routes: [
       {
-        name: 'login',
+        name: '登录',
         path: '/user/login',
         component: './User/Login',
       },
     ],
   },
+  {path:'/',redirect: '/add_chart'},
+  {name:'智能分析',path:'/add_chart',icon:'barChart',component: './AddChart'},
+  {name:'异步分析',path:'/add_chart_async',icon:'radarChart',component: './AddChartAsync'},
+  {name:'我的图表',path:'/my_chart',icon:'radarChart',component: './MyChart'},
+
   {
     path: '/welcome',
     name: 'welcome',
@@ -44,12 +49,6 @@ export default [
         component: './Admin',
       },
     ],
-  },
-  {
-    name: 'list.table-list',
-    icon: 'table',
-    path: '/list',
-    component: './TableList',
   },
   {
     path: '/',
