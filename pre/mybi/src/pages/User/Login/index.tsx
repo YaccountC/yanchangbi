@@ -42,7 +42,6 @@ const Lang = () => {
 };
 
 
-
 const Login: React.FC = () => {
   const [type, setType] = useState<string>('account');
   const {  setInitialState } = useModel('@@initialState');
