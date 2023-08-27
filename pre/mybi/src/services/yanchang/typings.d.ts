@@ -160,6 +160,12 @@ declare namespace API {
     name?: string;
   };
 
+  type genChartByAsyncMqUsingPOSTParams = {
+    chartType?: string;
+    goal?: string;
+    name?: string;
+  };
+
   type genChartByAsyncUsingPOSTParams = {
     chartType?: string;
     goal?: string;
